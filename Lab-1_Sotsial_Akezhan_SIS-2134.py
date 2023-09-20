@@ -49,12 +49,13 @@
 # print(math.ceil(n/2))
 
 # 2.4
-n = int(input())
-if (n == 0) :
-   print('Error')
-else: print(f'The result of << is ', n + 1)
+# n = int(input())
+# if (n == 0) :
+#    print('Error')
+# else :
+#    print(f'The result of << is ', (2)**n)
 
-#2.5
+# #2.5
 # print(f"Please enter the first number: " )
 # a = int(input())
 # print(f"Please enter the second number: " )
