@@ -6,69 +6,99 @@
 #1.2
 # print(f'4','\n8', '\n15', '\n16', '\n23', '\n42')
 
-#1.3
-# a = int(input())
-# b = a + 1
-# c = a + 2
-# print(a)
-# print(b)
-# print(c)
+# # 1.3
+# try:
+#    a = int(input())
+#    b = a + 1
+#    c = a + 2
+#    print(b)
+#    print(c)
+#    print(a)
+# except ValueError:
+#    print('Wrong Input')
+
 
 # #1.4
-# a = int(input())
-# b = int(input())
-# c = int(input())
-# print(a + b + c)
+# try:
+#    a = int(input())
+#    b = int(input())
+#    c = int(input())
+#    print(a + b + c)
+# except ValueError:
+#    print('Wrong Input')
 
-#1.5
-# a = int(input())
-# vol = a**3
-# S = 6 * a**2
-# print(f'Volume = ', vol)
-# print(f'Total surface area = ', S)
-
+# # 1.5
+# try:
+#    a = int(input())
+#    vol = a**3
+#    S = 6 * a**2
+#    print(f'Volume = ', vol)
+#    print(f'Total surface area = ', S)
+# except ValueError:
+#    print('wrong input')
 #Task 2
-# #2.1
-# n = int(input())
-# k = int(input())
-# get = k / n
-# remain = k % n
-# print(get)
-# print(remain)
-
+# # #2.1
+# try:
+#    n = int(input())
+#    k = int(input())
+#    get = k // n
+#    remain = k % n
+#    print(get)
+#    print(remain)
+# except ValueError:
+#    print('wrong input')
 # #2.2
-# a = input()
-# print(f'The digit in the thousands position is ', a[0])
-# print(f'The number in the hundreds position  is ', a[1])
-# print(f'The digit in the tens position is ', a[2])
-# print(f'The digit in the position of units is  ', a[3])
-
-# #2.3  
-# import math
-# n = int(input())
-# print(math.ceil(n/2))
-
+# try:
+#    number = int(input("Enter a four-digit number: "))
+#    if 10000 <= number <= 99990:
+#       thousandsdasda = number // 10000
+#       thousands = (number // 1000) % 10
+#       hundreds = (number // 100) % 10
+#       tens = (number // 10) % 10
+#       ones = number % 10
+#       print("The digit in the thousandsdsadsa position is", thousandsdasda)
+#       print("The digit in the thousands position is", thousands)
+#       print("The number in the hundreds position is", hundreds)
+#       print("The digit in the tens position is", tens)
+#       print("The digit in the position of units is", ones)
+#    else:
+#       print("Invalid input. Please enter a four-digit number.")
+# except ValueError:
+#    print('wrong input')
+# # #2.3  
+# try:
+#    import math
+#    n = int(input())
+#    print(math.ceil(n/2))
+# except ValueError:
+#    print('wrong input')
 # 2.4
-# n = int(input())
-# if (n == 0) :
-#    print('Error')
-# else :
-#    print(f'The result of << is ', (2)**n)
-
-# #2.5
-# print(f"Please enter the first number: " )
-# a = int(input())
-# print(f"Please enter the second number: " )
-# b = int(input())
-# print(f"Please choose the operation (+, -, *, /): ")
-# operation = str(input())
-# match operation:
-#    case "+": 
-#       print(a + b)
-#    case "-":
-#       print(a - b)
-#    case "*":
-#       print(a * b)
-#    case "/":
-#       print(a / b)
-
+try:
+   n = int(input())
+   if (n == 0) :
+      print('Error')
+   else :
+      print(f'The result of << is ', (2)**n)
+except ValueError:
+   print('wrong input')
+#2.5
+try:
+   print(f"Please enter the first number: " )
+   a = int(input())
+   print(f"Please enter the second number: " )
+   b = int(input())
+   print(f"Please choose the operation (+, -, *, /): ")
+   operation = str(input())
+   match operation:
+      case "+": 
+         print(a + b)
+      case "-":
+         print(a - b)
+      case "*":
+         print(a * b)
+      case "/":
+         print(a / b)
+except ValueError:
+   print('wrong input')
+except ZeroDivisionError:
+   print('error')
